@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>Tic-Tac-Toe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .b {
+                background-color: lightgrey;
+            }
+            .x .o {
+                background-color: white;
+            }
+           
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background-color: #d9feff;
+                color: #0c3572;
+                padding: 5px;
+                text-align: center;
+                font-size: 10px;
+                font-family: monospace;
+                font-weight: 600;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                min-height: 100vh; /* Ensure the entire viewport height is covered */
+                background-color: #f0f0f0;
+                font-family: monospace; /* Background color (optional) */
+            }
+            .container {
+                width: 80%; /* Adjust the width of your container */
+                max-width: 400px; /* Optional: Set a maximum width for better readability */
+                text-align: center; /* Center the content inside the container */
+                padding: 20px; /* Add padding for spacing */
+                background-color: #fff; /* Container background color (optional) */
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow for depth */
+            }
+        </style>
+    </head>
+    <body>
+
+            <div class="container">
+                <div style="display: flex; justify-content: center; margin-bottom: 5%;">
+                
+                    <table border="0px">
+                        <tr>
+                            <td><span id="td0"></span></td>
+                            <td><span id="td1"></span></td>
+                            <td><span id="td2"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="td3"></span></td>
+                            <td><span id="td4"></span></td>
+                            <td><span id="td5"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span id="td6"></span></td>
+                            <td><span id="td7"></span></td>
+                            <td><span id="td8"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="display: flex; justify-content: center;"><span id="next"></span></div>
+
+            </div>
+            <footer>Crafted with 💗 by Shashank</footer>
+        <script src="./tictactoe.js"></script>
+    </body>
+</html>
